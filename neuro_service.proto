@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package="github.com/ntl-y/neuro-pic-proto";
+
+package neuroproto;
+
+service NeuroServoce {
+    rpc GeneratePicture (GeneratePictureRequest) returns (GeneratePictureResponse) {}
+}
+
+message GeneratePictureRequest{
+    bytes OriginalImage = 1;
+    bytes StyleImage = 2;
+}
+
+message GeneratePictureResponse {
+    bytes ResultImage = 1;
+}
