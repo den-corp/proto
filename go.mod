@@ -1,4 +1,4 @@
-module github.com/ntl-y/neuro-pic-proto
+module github.com/den-corp/proto
 
 go 1.21.1
 
